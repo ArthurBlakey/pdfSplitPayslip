@@ -1,10 +1,13 @@
 #Importing the necessary modules
-
 import os
 import PyPDF2
 
+
+#Making sure we're in the right directory
 os.chdir('/Users/glencoppens/Downloads')
 
+
+#Choosing which pdf file we're going to split
 inputpdf =   PyPDF2.PdfFileReader(open("FOPAI_0031_110496_000003_000129_20170327_000003 (1).PDF", "rb"))
 
 properties = 'Fiche de paie 2017-04',
@@ -23,9 +26,7 @@ for i, name in enumerate(filename):
         print(f)
 
 
-
 #Changing the filename from XXX Fiche de paie to XXX Loonfiche if person speaks dutch
-
 path = "/Users/glencoppens/Downloads"
 
 for file in os.listdir("/Users/glencoppens/Downloads"):
