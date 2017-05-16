@@ -8,7 +8,7 @@ os.chdir('/Users/glencoppens/Downloads')
 inputpdf =   PyPDF2.PdfFileReader(open("FOPAI_0031_110496_000003_000129_20170327_000003 (1).PDF", "rb"))
 
 properties = 'Fiche de paie 2017-04',
-names = ("TRO", "BDE", "LBE", "GCO", "ITO", "FVB", "ANI", "WME","MNO")
+names = ("TRO", "BDE", "LBE", "GCO", "ITO", "FVB", "ANI", "WME", "MNO")
 filename = []
 
 for prefix in properties:
