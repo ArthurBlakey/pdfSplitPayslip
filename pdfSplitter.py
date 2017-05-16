@@ -23,7 +23,7 @@ for i, name in enumerate(filename):
     output.addPage(inputpdf.getPage(i))
     with open(name, 'wb') as f:
         output.write(f)
-        print(f)
+
 
 
 #Changing the filename from XXX Fiche de paie to XXX Loonfiche if person speaks dutch
