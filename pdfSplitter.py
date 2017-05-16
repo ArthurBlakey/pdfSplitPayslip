@@ -1,3 +1,5 @@
+#Importing the necessary modules
+
 import os
 import PyPDF2
 
