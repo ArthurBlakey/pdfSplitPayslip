@@ -10,8 +10,8 @@ os.chdir('/Users/glencoppens/Downloads')
 #Choosing which pdf file we're going to split
 inputpdf =   PyPDF2.PdfFileReader(open("File with all the paylsips.PDF", "rb"))
 
-properties = 'Fiche de paie 2017-04',
-names = ("TRO", "BDE", "LBE", "GCO", "ITO", "FVB", "ANI", "WME", "MNO")
+properties = 'Fiche de paie 2017-0X',
+names = ("TRO", "BDE", "LBE", "GCO", "ITO", "FVB", "ANI", "WME", "CBE", "MNO")
 filename = []
 
 for prefix in properties:
