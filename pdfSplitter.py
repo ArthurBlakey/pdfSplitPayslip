@@ -30,9 +30,6 @@ for i, name in enumerate(filename):
 path = "/Users/glencoppens/Downloads"
 
 for file in os.listdir("/Users/glencoppens/Downloads"):
-    if file.startswith('GCO')\
-           or file.startswith("FVB")\
-            or file.startswith("ANI")\
-            or file.startswith("WME"):
+    if file.startswith(("GCO", "FVB", "ANI", "WME")):
         os.rename(path + "/"+file, path + "/"+file.replace("Fiche de paie", "Loonfiche"))
         print(file)
