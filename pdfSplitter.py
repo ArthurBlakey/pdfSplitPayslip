@@ -4,7 +4,7 @@ import PyPDF2
 
 
 #Making sure we're in the right directory
-os.chdir('/Users/glencoppens/Downloads')
+os.chdir('/Users/myname/Downloads')
 
 
 #Choosing which pdf file we're going to split
@@ -28,9 +28,9 @@ for i, name in enumerate(filename):
 
 
 #Changing the filename from XXX Fiche de paie to XXX Loonfiche if person speaks dutch
-path = "/Users/glencoppens/Downloads"
+path = "/Users/myname/Downloads"
 
-for file in os.listdir("/Users/glencoppens/Downloads"):
+for file in os.listdir("/Users/myname/Downloads"):
     if file.startswith(("GCO", "FVB", "ANI", "WME")):
         os.rename(path + "/"+file, path + "/"+file.replace("Fiche de paie", "Loonfiche"))
         print(file)
